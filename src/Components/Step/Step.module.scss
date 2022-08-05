@@ -1,0 +1,41 @@
+.StepWrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 11px;
+  padding-top: 11px;
+
+
+  .Circle {
+    height: 34px;
+    width: 34px;
+    border-radius: 34px;
+    /* Main White 10% */
+    background: rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin-right: 14px;
+  }
+
+  .Number {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+  }
+  .Text {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+  }
+}

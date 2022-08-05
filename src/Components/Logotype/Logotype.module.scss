@@ -1,0 +1,63 @@
+.LogotypeWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+
+  //position
+  position: fixed;
+  width: 757px;
+  height: 757px;
+  left: -76px;
+  top: 0;
+
+  .TextWrapper {
+    position: absolute;
+    width: 404px;
+    height: 254px;
+    left: 320px;
+    top: 146px;
+    z-index: 1;
+
+    .Title {
+      font-family: 'Gilroy',  sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 84px;
+      line-height: 100px;
+
+      color: #FFFFFF;
+      transition: 1s;
+      text-decoration: none;
+      margin-bottom: 34px;
+    }
+    .Title:hover {
+      transition: 0.5s;
+      color: brown;
+    }
+    .Subtitle {
+      font-family: 'Gilroy', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+
+      color: #FFFFFF;
+    }
+  }
+
+  .BGSpinner {
+    background-image: url("./Spinner/Background.png");
+    background-repeat: no-repeat;
+    animation: spin 4s linear infinite;
+    width: 757px;
+    height: 757px;
+    opacity: 35%;
+
+    @keyframes spin{
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+  }
+}
