@@ -14,8 +14,8 @@
 
     display: flex;
     justify-content: center;
-    text-align: center;
-    justify-items: center;
+    align-items: center;
+
     margin-right: 14px;
   }
 
@@ -27,7 +27,7 @@
     line-height: 21px;
 
     color: #FFFFFF;
-
+    text-align: center;
   }
   .Text {
     font-family: 'Gilroy', sans-serif;
