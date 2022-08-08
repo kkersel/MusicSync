@@ -9,10 +9,10 @@ import {Slide, Fade} from "react-reveal";
 const ContactsPage = () => {
     return (
             <div className={x.CentralWrapper}>
-                <Fade top>
+                <Fade>
                 <div className={x.ContactsPageWrapper}>
                     {/*Кнопка*/}
-                    <NavLink  className={x.HomeButton} to="/MainPage">
+                    <NavLink  className={x.HomeButton} to="/">
                         <Button title="Назад"/>
                     </NavLink>
 
