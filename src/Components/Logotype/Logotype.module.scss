@@ -1,3 +1,9 @@
+@import "~breakpoint-sass";
+$bk-desktop: 1440px;
+$bk-table-landscape: 1085px 811px;
+$bk-table: 811px 611px;
+$bk-phone: 611px 0px;
+
 .LogotypeWrapper {
   display: flex;
   flex-flow: column;
@@ -16,12 +22,12 @@
     position: absolute;
     width: 404px;
     height: 254px;
-    left: 320px;
+    left: 20%;
     top: 146px;
     z-index: 1;
 
     .Title {
-      font-family: 'Gilroy',  sans-serif;
+      font-family: 'Gilroy', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 84px;
@@ -31,11 +37,17 @@
       transition: 1s;
       text-decoration: none;
       margin-bottom: 34px;
+
+      @include breakpoint($bk-table-landscape) {
+        color: #93D34B;
+      }
     }
+
     .Title:hover {
       transition: 0.5s;
       color: brown;
     }
+
     .Subtitle {
       font-family: 'Gilroy', sans-serif;
       font-style: normal;
@@ -55,9 +67,19 @@
     height: 757px;
     opacity: 35%;
 
-    @keyframes spin{
-      0% {transform: rotate(0deg);}
-      100% {transform: rotate(360deg);}
+    @include breakpoint($bk-table-landscape) {
+      width: 100%;
+      height: 100%;
+      opacity: 5%;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
   }
 }

@@ -1,3 +1,9 @@
+@import "~breakpoint-sass";
+$bk-desktop: 1440px;
+$bk-table-landscape: 1085px 811px;
+$bk-table: 811px 611px;
+$bk-phone: 611px 0px;
+
 .CentralWrapper {
   display: flex;
   justify-content: center;

@@ -11,6 +11,7 @@
 
   .ContentWrapper {
     width: 400px;
+
     .Content {
       //StatusBar
       //Step
@@ -24,6 +25,7 @@
         padding-top: 11px;
 
         color: #FFFFFF;
+
         .HelpTextGreen {
           font-family: 'Gilroy', sans-serif;
           font-style: normal;
@@ -34,6 +36,34 @@
           color: #93D34B;
         }
       }
+
+      .LinkServices {
+        text-decoration: none;
+
+        .ServicesWrapper {
+          transition: 0.3s;
+          .ServicesTitle {
+            font-family: 'Gilroy', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 37px;
+            margin-left: 34px;
+
+            color: #FFFFFF;
+          }
+
+          display: flex;
+          list-style: none;
+          margin-bottom: 24px;
+        }
+      }
+      .ServicesWrapper:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+
       //cards
       .Card {
         height: 400px;
