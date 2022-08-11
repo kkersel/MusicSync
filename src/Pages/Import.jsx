@@ -1,12 +1,12 @@
 import React from 'react';
-import a from './MainPage.module.scss'
+import a from './Import.scss'
 import Logotype from "../Components/Logotype/Logotype";
 import StatusBar from "../Components/StatusBar/StatusBar";
 import Step from "../Components/Step/Step";
 import {Fade, Slide} from "react-reveal";
 import {NavLink} from "react-router-dom";
 
-const MainPage = () => {
+const Import = () => {
     return (
         <Slide right>
             <div className={a.Wrapper}>
@@ -50,4 +50,4 @@ const MainPage = () => {
     )
 };
 
-export default MainPage;
+export default Import;
