@@ -11,6 +11,10 @@ $bk-phone: 611px 0px;
   align-content: center;
   text-align: left;
 
+  @include breakpoint($bk-phone) {
+    display: none;
+  }
+
   //position
   position: fixed;
   width: 757px;
@@ -71,6 +75,9 @@ $bk-phone: 611px 0px;
       width: 100%;
       height: 100%;
       opacity: 5%;
+    }
+    @include breakpoint($bk-phone) {
+      display: none;
     }
 
     @keyframes spin {

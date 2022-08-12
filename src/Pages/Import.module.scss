@@ -1,5 +1,5 @@
 .Wrapper {
-  background: linear-gradient(180deg, #6F8BD3 0%, #325FD2 100%);
+  //background: linear-gradient(180deg, #6F8BD3 0%, #325FD2 100%);
   height: 100vh;
   width: 100%;
 
@@ -39,23 +39,33 @@
 
       .LinkServices {
         text-decoration: none;
-
         .ServicesWrapper {
-          transition: 0.3s;
+          height: 40px;
+          //width: 400px;
+          transition: 0.8s;
+          padding: 20px;
+          margin: 20px;
+          border-radius: 10px;
+
+          display: flex;
+          align-items: center;
+          justify-content: left;
+
+          img {
+            height: 42px;
+            width: 42px;
+            margin-right: 34px;
+          }
+
           .ServicesTitle {
             font-family: 'Gilroy', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 32px;
             line-height: 37px;
-            margin-left: 34px;
 
             color: #FFFFFF;
           }
-
-          display: flex;
-          list-style: none;
-          margin-bottom: 24px;
         }
       }
       .ServicesWrapper:hover {

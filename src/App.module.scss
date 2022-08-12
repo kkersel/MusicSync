@@ -1,0 +1,37 @@
+@import "~breakpoint-sass";
+
+$bk-desktop: 1440px;
+$bk-table-landscape: 1085px 811px;
+$bk-table: 811px 611px;
+$bk-phone: 611px 0px;
+
+.AppWrapper {
+  background-image: url("./Components/Logotype/Spinner/Background.png");
+  background-repeat: no-repeat;
+  animation: spin 4s linear infinite;
+  opacity: 35%;
+  position: fixed;
+  width: 757px;
+  height: 757px;
+  left: -76px;
+  top: 0;
+  
+  @include breakpoint($bk-table-landscape) {
+    width: 100%;
+    height: 100%;
+    opacity: 5%;
+  }
+  @include breakpoint($bk-phone) {
+    display: none;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+

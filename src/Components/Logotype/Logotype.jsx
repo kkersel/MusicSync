@@ -14,7 +14,7 @@ const Logotype = () => {
                    синхронизации <br/>
                    вашей музыки</h2>
            </div>
-            <div className={Logo.BGSpinner}></div>
+            {/*<div className={Logo.BGSpinner}></div>*/}
         </div>
     );
 };

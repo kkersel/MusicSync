@@ -7,7 +7,7 @@ const Step = ({number}) => {
             <div className={s.Circle}>
                 <p className={s.Number}>{number}</p>
             </div>
-            <h1  className={s.Text}>Шаг</h1>
+            <h1 className={s.Text}>Шаг</h1>
         </div>
     );
 };

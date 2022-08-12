@@ -1,0 +1,104 @@
+.Wrapper {
+  //background: linear-gradient(180deg, #6F8BD3 0%, #325FD2 100%);
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column;
+
+  justify-content: center;
+  align-items: center;
+
+  .ContentWrapper {
+    width: 400px;
+
+    .NavigationMenu {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+
+      .HomeButton {
+        text-decoration: none;
+      }
+    }
+
+    .Content {
+      //StatusBar
+      //Step
+      .HelpText {
+        font-family: 'Gilroy', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 39px;
+        padding-bottom: 11px;
+        padding-top: 11px;
+
+        color: #FFFFFF;
+
+        .HelpTextGreen {
+          font-family: 'Gilroy', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 34px;
+          line-height: 39px;
+
+          color: #93D34B;
+        }
+      }
+
+      .LinkServices {
+        text-decoration: none;
+        .ServicesWrapper {
+          height: 40px;
+          //width: 400px;
+          transition: 0.8s;
+          padding: 20px;
+          margin: 20px;
+          border-radius: 10px;
+
+          display: flex;
+          align-items: center;
+          justify-content: left;
+
+          img {
+            height: 42px;
+            width: 42px;
+            margin-right: 34px;
+          }
+
+          .ServicesTitle {
+            font-family: 'Gilroy', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 37px;
+
+            color: #FFFFFF;
+          }
+        }
+      }
+      .ServicesWrapper:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+
+      //cards
+      .Card {
+        height: 400px;
+        width: 400px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+
+        padding-top: 11px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
