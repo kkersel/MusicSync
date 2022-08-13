@@ -12,7 +12,7 @@ const ContactsPage = () => {
                 <Fade>
                 <div className={x.ContactsPageWrapper}>
                     {/*Кнопка*/}
-                    <NavLink  className={x.HomeButton} to="/">
+                    <NavLink  className={x.HomeButton} to="/Import">
                         <Button title="Назад"/>
                     </NavLink>
 

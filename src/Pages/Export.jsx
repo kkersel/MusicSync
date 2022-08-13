@@ -12,20 +12,23 @@ const Export = () => {
     return (
         <div className={a.Wrapper}>
             <Logotype/>
-            <Fade right>
-                <div className={a.ContentWrapper}>
-                    <div className={a.Content}>
-                        <StatusBar/>
-                        <div className={a.NavigationMenu}>
-                            <Step number="2"/>
-                            <NavLink className={a.HomeButton} to="/Import">
-                                <Button title="Назад"/>
-                            </NavLink>
-                        </div>
-                        <h1 className={a.HelpText}>Выберите сервис <br/>
-                            <text className={a.HelpTextGreen}>Из которого</text>
-                            вы хотите перенести треки
-                        </h1>
+            <div className={a.ContentWrapper}>
+                <div className={a.Content}>
+                    <StatusBar prossent="30"/>
+                    <div className={a.NavigationMenu}>
+                        <Step number="2"/>
+                        <NavLink className={a.HomeButton} to="/Import">
+                            <Button title="Назад"/>
+                        </NavLink>
+                    </div>
+                    <h1 className={a.HelpText}>Выберите сервис <br/>
+                        <Slide left>
+                            <text className={a.HelpTextGreen}>В который </text>
+                        </Slide>
+                        вы хотите перенести треки
+                    </h1>
+
+                    <Fade right>
                         <div className={a.Card}>
                             <ul>
                                 <a className={a.LinkServices} href="https://spotify.com">
@@ -48,9 +51,9 @@ const Export = () => {
                                 </a>
                             </ul>
                         </div>
-                    </div>
+                    </Fade>
                 </div>
-            </Fade>
+            </div>
         </div>
     )
 };

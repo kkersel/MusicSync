@@ -15,9 +15,7 @@ $bk-phone: 611px 0px;
 }
 
 .ContactsPageWrapper {
-
   display: flex;
-
   .HomeButton {
     margin-right: 34px;
     height: 34px;
@@ -27,14 +25,12 @@ $bk-phone: 611px 0px;
   .TitleSubtitle {
     display: flex;
     flex-flow: column;
-
     .IconWrapper  {
       display: flex;
       justify-content: space-between;
       width: 260px;
       margin-bottom: 34px;
     }
-
     .link {
       width: 64px;
     }

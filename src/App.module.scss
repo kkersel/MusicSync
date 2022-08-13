@@ -14,12 +14,15 @@ $bk-phone: 611px 0px;
   width: 757px;
   height: 757px;
   left: -76px;
-  top: 0;
-  
+  //top: 0;
+  z-index: -1;
+
   @include breakpoint($bk-table-landscape) {
-    width: 100%;
-    height: 100%;
-    opacity: 5%;
+    width: 100vh;
+    height: 100vh;
+    background-position: left top;
+    //opacity: 5%;
+    background-size: 50%;
   }
   @include breakpoint($bk-phone) {
     display: none;

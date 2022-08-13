@@ -10,40 +10,42 @@ const Import = () => {
     return (
         <div className={a.Wrapper}>
             <Logotype/>
-            <Fade left>
                 <div className={a.ContentWrapper}>
                     <div className={a.Content}>
-                        <StatusBar/>
-                        <Step number="1"/>
-                        <h1 className={a.HelpText}>Выберите сервис <br/>
-                            <text className={a.HelpTextGreen}>Из которого</text>
-                            вы хотите перенести треки
-                        </h1>
-                        <div className={a.Card}>
-                            <ul>
-                                <NavLink className={a.LinkServices} to="/Export">
-                                    <div className={a.ServicesWrapper}>
-                                        <img src="../images/Services/Spotify.png" alt=""/>
-                                        <h1 className={a.ServicesTitle}>Spotify</h1>
-                                    </div>
-                                </NavLink>
-                                <NavLink className={a.LinkServices} to="/Export">
-                                    <div className={a.ServicesWrapper}>
-                                        <img src="../images/Services/Yandex.png" alt=""/>
-                                        <h1 className={a.ServicesTitle}>Yandex Music</h1>
-                                    </div>
-                                </NavLink>
-                                <NavLink className={a.LinkServices} to="/Export">
-                                    <div className={a.ServicesWrapper}>
-                                        <img src="../images/Services/Apple.png" alt=""/>
-                                        <h1 className={a.ServicesTitle}>Apple Music</h1>
-                                    </div>
-                                </NavLink>
-                            </ul>
-                        </div>
+                        <StatusBar prossent="0"/>
+                            <Step number="1"/>
+                            <h1 className={a.HelpText}>Выберите сервис <br/>
+                                <Slide left>
+                                <text className={a.HelpTextGreen}>Из которого </text>
+                                </Slide>
+                                вы хотите перенести треки
+                            </h1>
+                        <Fade right>
+                            <div className={a.Card}>
+                                <ul>
+                                    <NavLink className={a.LinkServices} to="/Export">
+                                        <div className={a.ServicesWrapper}>
+                                            <img src="../images/Services/Spotify.png" alt=""/>
+                                            <h1 className={a.ServicesTitle}>Spotify</h1>
+                                        </div>
+                                    </NavLink>
+                                    <NavLink className={a.LinkServices} to="/Export">
+                                        <div className={a.ServicesWrapper}>
+                                            <img src="../images/Services/Yandex.png" alt=""/>
+                                            <h1 className={a.ServicesTitle}>Yandex Music</h1>
+                                        </div>
+                                    </NavLink>
+                                    <NavLink className={a.LinkServices} to="/Export">
+                                        <div className={a.ServicesWrapper}>
+                                            <img src="../images/Services/Apple.png" alt=""/>
+                                            <h1 className={a.ServicesTitle}>Apple Music</h1>
+                                        </div>
+                                    </NavLink>
+                                </ul>
+                            </div>
+                        </Fade>
                     </div>
                 </div>
-            </Fade>
         </div>
     )
 };

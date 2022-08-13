@@ -1,10 +1,10 @@
 import React from 'react';
 import Bar from './StatusBar.module.scss'
 
-const StatusBar = () => {
+const StatusBar = ({prossent, ...props}) => {
     return (
         <div className={Bar.Wrapper}>
-            <div className={Bar.StatusBar}></div>
+            <progress max="100" value={prossent} className={Bar.ProgressBar}>0%</progress>
         </div>
     );
 };

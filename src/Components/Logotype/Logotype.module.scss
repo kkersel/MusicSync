@@ -44,6 +44,8 @@ $bk-phone: 611px 0px;
 
       @include breakpoint($bk-table-landscape) {
         color: #93D34B;
+        font-size: 44px;
+        margin-bottom: 5px;
       }
     }
 
@@ -60,6 +62,12 @@ $bk-phone: 611px 0px;
       line-height: 40px;
 
       color: #FFFFFF;
+
+      @include breakpoint($bk-table-landscape) {
+        font-size: 24px;
+        transition: 0.5s;
+        line-height: 25px;
+      }
     }
   }
 
