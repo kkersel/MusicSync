@@ -1,5 +1,4 @@
 import React from 'react';
-import TitleName from "../Components/Title.Name/TitleName";
 import x from './ContactsPage.module.scss';
 import {NavLink} from "react-router-dom";
 import Button from "../Components/Button/Button";
@@ -20,7 +19,7 @@ const ContactsPage = () => {
                     <Slide left>
                         <div className={x.TitleSubtitle}>
                             {/*Название*/}
-                            <TitleName/>
+                            <h1 className={x.Text}>MusicSync</h1>
                             <div className={x.Subtitle1}>Сервис для синхронизации <br/> вашей музыки</div>
                             <div className={x.Subtitle2}>Контакты:</div>
                             <div className={x.IconWrapper}>
@@ -28,7 +27,7 @@ const ContactsPage = () => {
                                 <a className={x.link} href="vk.com/innv1"><SocialBackground image={"/images/Social Media/vk.png"}/></a>
                                 <a className={x.link} href="t.me/innv1"><SocialBackground image={"/images/Social Media/tg.png"}/></a>
                             </div>
-                            <div className={x.Subtitle3}>sobachiy.deputat2017@yandex.ru</div>
+                            <div className={x.Email}>sobachiy.deputat2017@yandex.ru</div>
                         </div>
                     </Slide>
                 </div>

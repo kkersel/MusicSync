@@ -1,6 +1,6 @@
 @import "~breakpoint-sass";
-$bk-desktop: 1440px;
-$bk-table-landscape: 1085px 811px;
+$bk-desktop: 1920px 1440px;
+$bk-table-landscape: 1440px 811px;
 $bk-table: 811px 611px;
 $bk-phone: 611px 0px;
 
@@ -11,25 +11,29 @@ $bk-phone: 611px 0px;
   align-content: center;
   text-align: left;
 
+  //position
+  position: absolute;
+  left: 240px;
+  top: 146px;
+
   @include breakpoint($bk-phone) {
-    display: none;
+    position: relative;
+    left: 0;
+    top: 0;
   }
 
-  //position
-  position: fixed;
-  width: 757px;
-  height: 757px;
-  left: -76px;
-  top: 0;
+  @include breakpoint($bk-table-landscape) {
+    position: fixed;
+    left: 50px;
+    top: 100px;
+  }
 
+  @include breakpoint($bk-table) {
+    position: relative;
+    left: auto;
+    top: 0;
+  }
   .TextWrapper {
-    position: absolute;
-    width: 404px;
-    height: 254px;
-    left: 20%;
-    top: 146px;
-    z-index: 1;
-
     .Title {
       font-family: 'Gilroy', sans-serif;
       font-style: normal;
@@ -43,8 +47,16 @@ $bk-phone: 611px 0px;
       margin-bottom: 34px;
 
       @include breakpoint($bk-table-landscape) {
-        color: #93D34B;
-        font-size: 44px;
+        //font-size: 64px;
+        margin-bottom: 5px;
+      }
+
+      @include breakpoint($bk-phone) {
+        font-size: 64px;
+        margin-bottom: 5px;
+      }
+
+      @include breakpoint($bk-table) {
         margin-bottom: 5px;
       }
     }
@@ -64,37 +76,41 @@ $bk-phone: 611px 0px;
       color: #FFFFFF;
 
       @include breakpoint($bk-table-landscape) {
-        font-size: 24px;
+        font-size: 34px;
         transition: 0.5s;
-        line-height: 25px;
+        //line-height: 25px;
+      }
+
+      @include breakpoint($bk-phone) {
+        display: none;
       }
     }
   }
 
-  .BGSpinner {
-    background-image: url("./Spinner/Background.png");
-    background-repeat: no-repeat;
-    animation: spin 4s linear infinite;
-    width: 757px;
-    height: 757px;
-    opacity: 35%;
-
-    @include breakpoint($bk-table-landscape) {
-      width: 100%;
-      height: 100%;
-      opacity: 5%;
-    }
-    @include breakpoint($bk-phone) {
-      display: none;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  }
+  //.BGSpinner {
+  //  background-image: url("./Spinner/Background.png");
+  //  background-repeat: no-repeat;
+  //  animation: spin 4s linear infinite;
+  //  width: 757px;
+  //  height: 757px;
+  //  opacity: 35%;
+  //
+  //  @include breakpoint($bk-table-landscape) {
+  //    width: 100%;
+  //    height: 100%;
+  //    opacity: 5%;
+  //  }
+  //  @include breakpoint($bk-phone) {
+  //    display: none;
+  //  }
+  //
+  //  @keyframes spin {
+  //    0% {
+  //      transform: rotate(0deg);
+  //    }
+  //    100% {
+  //      transform: rotate(360deg);
+  //    }
+  //  }
+  //}
 }
