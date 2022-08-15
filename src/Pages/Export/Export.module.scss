@@ -1,13 +1,23 @@
+@import "~breakpoint-sass";
+$bk-desktop: 1440px;
+$bk-table-landscape: 1085px 811px;
+$bk-table: 811px 611px;
+$bk-phone: 611px 0px;
+
 .Wrapper {
   //background: linear-gradient(180deg, #6F8BD3 0%, #325FD2 100%);
   height: 100vh;
-  width: 100%;
+  //width: 100%;
 
   display: flex;
   flex-flow: column;
 
   justify-content: center;
   align-items: center;
+
+  @include breakpoint($bk-phone) {
+    margin: 40px;
+  }
 
   .ContentWrapper {
     width: 400px;
@@ -50,6 +60,7 @@
 
       .LinkServices {
         text-decoration: none;
+
         .ServicesWrapper {
           height: 40px;
           //width: 400px;
@@ -79,6 +90,7 @@
           }
         }
       }
+
       .ServicesWrapper:hover {
         background: rgba(255, 255, 255, 0.2);
         border-radius: 20px;

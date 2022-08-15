@@ -1,0 +1,99 @@
+@import "~breakpoint-sass";
+$bk-desktop: 1440px;
+$bk-table-landscape: 1085px 811px;
+$bk-table: 811px 611px;
+$bk-phone: 611px 0px;
+
+.Wrapper {
+  height: auto;
+  //width: 100%;
+
+  display: flex;
+  flex-flow: column;
+
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint($bk-phone) {
+    margin: 40px;
+  }
+
+  .ContentWrapper {
+    width: 400px;
+
+    .NavigationMenu {
+      display: flex;
+      flex-flow: column;
+
+      .HomeButton {
+        text-decoration: none;
+      }
+
+      .StepButton {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .Content {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: center;
+      //StatusBar
+      //Step
+      .HelpText {
+        font-family: 'Gilroy', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 39px;
+        padding-bottom: 11px;
+        padding-top: 11px;
+
+        color: #FFFFFF;
+      }
+
+      .ServicesWrapper:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+
+
+      .CardButton {
+        width: 1024px;
+        display: flex;
+        //cards
+
+        @include breakpoint($bk-phone) {
+          flex-flow: column;
+        }
+
+        .ButtonSync {
+          text-decoration: none;
+          margin-left: 34px;
+
+          @include breakpoint($bk-phone) {
+            margin-top: 34px;
+          }
+        }
+        .Card {
+          width: 701px;
+          height: 604px;
+
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+
+          padding-top: 11px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+

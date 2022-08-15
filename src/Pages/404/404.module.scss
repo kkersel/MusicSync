@@ -1,0 +1,31 @@
+@import "~breakpoint-sass";
+$bk-desktop: 1440px;
+$bk-table-landscape: 1085px 811px;
+$bk-table: 811px 611px;
+$bk-phone: 611px 0px;
+
+.Page404 {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include breakpoint($bk-phone) {
+    padding: 0 40px 0 40px;
+  }
+
+  h1 {
+    font-size: 200px;
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #93D34B;
+  }
+}
