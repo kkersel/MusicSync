@@ -23,9 +23,9 @@ const Export = () => {
                         </NavLink>
                     </div>
 
-                    <h1 className={b.HelpText}>Выберите сервис <br/>
+                    <h1 className={b.HelpText}>Выберите сервис<br/>
                         <Slide left>
-                            <text className={b.HelpTextGreen}>В который</text>
+                            <text className={b.HelpTextGreen}>В который </text>
                         </Slide>
                         вы хотите перенести треки
                     </h1>

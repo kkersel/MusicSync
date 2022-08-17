@@ -15,9 +15,9 @@ const Import = () => {
                     {/*Navigation Menu and Help Title*/}
                     <StatusBar prossent="0"/>
                     <Step number="1"/>
-                    <h1 className={a.HelpText}>Выберите сервис <br/>
+                    <h1 className={a.HelpText}>Выберите сервис<br/>
                         <Slide left>
-                            <text className={a.HelpTextGreen}>Из которого</text>
+                            <text className={a.HelpTextGreen}>Из которого </text>
                         </Slide>
                         вы хотите перенести треки
                     </h1>

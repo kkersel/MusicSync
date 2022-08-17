@@ -30,13 +30,59 @@ const Choose = () => {
                     <Fade right>
                         <div className={c.CardButton}>
                             <div className={c.Card}>
+
+                                {/*Header*/}
+                                <div className={c.HeaderList}>
+                                    <CheckBox/>
+                                    <h1 className={c.HeaderText}>Выбрать все</h1>
+                                    <h1 className={c.HeaderText}>Название</h1>
+                                    <h1 className={c.HeaderText}>Количество</h1>
+                                </div>
+
                                 <div className={c.WrapperLine}>
-                                    
+
+                                    <div className={c.List}>
+                                        <CheckBox/>
+                                        <img src="./images/Services/Spotify.png" alt=""/>
+                                        <h1 className={c.NameSound}>Name</h1>
+                                        <h1 className={c.HeaderText}>132</h1>
+                                    </div>
+                                    <div className={c.List}>
+                                        <CheckBox/>
+                                        <img src="./images/Services/Spotify.png" alt=""/>
+                                        <h1 className={c.NameSound}>Name</h1>
+                                        <h1 className={c.HeaderText}>132</h1>
+                                    </div>
+                                    <div className={c.List}>
+                                        <CheckBox/>
+                                        <img src="./images/Services/Spotify.png" alt=""/>
+                                        <h1 className={c.NameSound}>Name</h1>
+                                        <h1 className={c.HeaderText}>132</h1>
+                                    </div>
+                                    <div className={c.List}>
+                                        <CheckBox/>
+                                        <img src="./images/Services/Spotify.png" alt=""/>
+                                        <h1 className={c.NameSound}>Name</h1>
+                                        <h1 className={c.HeaderText}>132</h1>
+                                    </div>
+                                    <div className={c.List}>
+                                        <CheckBox/>
+                                        <img src="./images/Services/Spotify.png" alt=""/>
+                                        <h1 className={c.NameSound}>Name</h1>
+                                        <h1 className={c.HeaderText}>132</h1>
+                                    </div>
+                                    <div className={c.List}>
+                                        <CheckBox/>
+                                        <img src="./images/Services/Spotify.png" alt=""/>
+                                        <h1 className={c.NameSound}>Name</h1>
+                                        <h1 className={c.HeaderText}>132</h1>
+                                    </div>
+
                                 </div>
                             </div>
-                            <NavLink className={c.ButtonSync} to="#">
-                                <Button title="Синхронизировать треки"/>
-                            </NavLink>
+                            {/*<NavLink className={c.ButtonSync} to="#">*/}
+                            {/*    <Button title="Синхронизировать треки"/>*/}
+                            {/*</NavLink>*/}
                         </div>
                     </Fade>
                 </div>
