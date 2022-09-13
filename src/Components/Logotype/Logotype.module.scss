@@ -12,9 +12,9 @@ $bk-phone: 611px 0px;
   text-align: left;
 
   //position
-  position: absolute;
-  left: 240px;
-  top: 146px;
+  //position: absolute;
+  //left: 240px;
+  //top: 146px;
 
   @include breakpoint($bk-phone) {
     position: relative;
@@ -47,7 +47,7 @@ $bk-phone: 611px 0px;
       margin-bottom: 34px;
 
       @include breakpoint($bk-table-landscape) {
-        //font-size: 64px;
+        font-size: 64px;
         margin-bottom: 5px;
       }
 
@@ -76,9 +76,9 @@ $bk-phone: 611px 0px;
       color: #FFFFFF;
 
       @include breakpoint($bk-table-landscape) {
-        font-size: 34px;
+        font-size: 24px;
         transition: 0.5s;
-        //line-height: 25px;
+        line-height: 25px;
       }
 
       @include breakpoint($bk-phone) {

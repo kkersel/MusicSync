@@ -50,14 +50,14 @@ const Choose = () => {
                                     <div className={c.List}>
                                         <CheckBox/>
                                         <img src="./images/Services/Spotify.png" alt=""/>
-                                        <h1 className={c.NameSound}>Name</h1>
+                                        <h1 className={c.NameSound}>rkmformfoi3m4fim34</h1>
                                         <h1 className={c.HeaderText}>132</h1>
                                     </div>
                                     <div className={c.List}>
                                         <CheckBox/>
                                         <img src="./images/Services/Spotify.png" alt=""/>
-                                        <h1 className={c.NameSound}>Name</h1>
-                                        <h1 className={c.HeaderText}>132</h1>
+                                        <h1 className={c.NameSound}>IMd9wmidom2dm2md</h1>
+                                        <h1 className={c.HeaderText}>1322</h1>
                                     </div>
                                     <div className={c.List}>
                                         <CheckBox/>
